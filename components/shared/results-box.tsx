@@ -8,8 +8,6 @@ import { useAppContext } from "@/context/AppContext";
 export default function ResultsBox() {
   const { factCheckResponse } = useAppContext();
 
-  console.log(factCheckResponse);
-
   return (
     <div className="mt-10 max-w-sm md:max-w-2xl w-full rounded-xl shadow-md overflow-hidden border border-gray-700 bg-gradient-to-br from-zinc-900 to-zinc-950">
       {/* Header with gradient background */}
