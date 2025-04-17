@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { AppProvider } from "@/context/AppContext";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" style={{ colorScheme: "dark" }}>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
